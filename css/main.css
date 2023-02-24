@@ -1,9 +1,9 @@
 /* USER VARIABLES SECTION */
 
 :root {
-	--accent: orange;
-	--text: #333;
-	--regular-text: 16px;
+	--accent: #DC6D1C;
+	--text: #0C3313;
+	--regular-text: 18px;
 	--lineheight: 1.65;
 	--userfont: roboto-st, sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -12,23 +12,111 @@
 /* BOOTSTRAP SETTINGS SECTION */
 
 /* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
-.row, .row > * { --bs-gutter-x: 1.25rem; }
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	--bs-gutter-x: .625rem;
+}
+
+.row, .row>* {
+	--bs-gutter-x: 1.25rem;
+}
 
 /* FONTS LOAD SECTION */
 
-@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
-@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
-@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
-@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+@font-face {
+	src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	src: url("../fonts/OpenSansCondensed-Light.woff") format("woff2");
+	font-family: "OpenSansCondensed-st";
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url('OpenSansCondensed-Light.eot');
+	src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'),
+		url('OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
+		url('OpenSansCondensed-Light.woff') format('woff'),
+		url('OpenSansCondensed-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url('OpenSansCondensed-Bold.eot');
+	src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'),
+		url('OpenSansCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		url('OpenSansCondensed-Bold.woff') format('woff'),
+		url('OpenSansCondensed-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url('OpenSansCondensed-LightItalic.eot');
+	src: local('Open Sans Condensed Light Italic'), local('OpenSansCondensed-LightItalic'),
+		url('OpenSansCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('OpenSansCondensed-LightItalic.woff') format('woff'),
+		url('OpenSansCondensed-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
 
 /* GENERAL CSS SETTINGS */
 
-::placeholder { color: #666; }
-::selection { background-color: var(--accent); color: #fff; }
-input, textarea { outline: none; }
-input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
-input:required:valid, textarea:required:valid { border-color: green; }
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: var(--accent);
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+}
+
+input:focus:required:invalid, textarea:focus:required:invalid {
+	border-color: red;
+}
+
+input:required:valid, textarea:required:valid {
+	border-color: green;
+}
 
 body {
 	font-family: var(--userfont);
@@ -38,6 +126,14 @@ body {
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
 }
 
 /* USER STYLES */
@@ -51,4 +147,17 @@ body {
 .accent {
 	color: var(--accent);
 	font-weight: bold;
+}
+
+.header_top {
+	background-color: #DCF9E1;
+	height: 70px;
+
+}
+
+.menu_top {
+	height: 70px;
+	justify-content: space-between;
+	align-items: center;
+	font-family: OpenSansCondensed-st;
 }
