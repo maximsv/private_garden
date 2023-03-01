@@ -313,12 +313,56 @@ ul.advantages li {
 	padding: 20px 20px 50px;
 }
 
+
+
+/* section-work */
+.main_work {
+	margin-top: 12vh;
+	margin-bottom: 12vh;
+	grid-gap: var(--gap);
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.section-work {
+	background-color: var(--background);
+	padding: var(--gap);
+}
+
+.work {
+	height: 100%;
+}
+
+.work img {
+	margin-bottom: var(--gap);
+}
+
+.work p {
+	display: flex;
+	align-self: flex-start;
+	margin-top: var(--gap);
+}
+
 .text-center {
 	text-align: center;
 }
 
-.main_work {
-	grid-gap: var(--gap);
-	/* grid-template-columns: repeat(5, 1fr); */
-	grid-template-columns: repeat(auto-fill, 17%);
+.working-text {
+	display: flex;
+}
+
+.working-text h2 {
+	display: flex;
+	margin: 0 auto;
+	position: relative;
+	margin-top: var(--gap);
+}
+
+.working-text h2::after {
+	content: "";
+	position: absolute;
+	top: 55px;
+	left: 0;
+	height: 2px;
+	width: 75%;
+	background-color: var(--accent);
 }
