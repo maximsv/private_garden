@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
   <head>
     <meta charset="utf-8" />
-    <!-- <base href="/"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Simple Starter</title>
-    <meta name="description" content="Simple Starter Description" />
+    <meta name="description" />
 
     <meta
       name="viewport"
@@ -61,7 +61,7 @@
               <li>Ніжно-зелене соковите забарвлення.</li>
               <li>Невимоглива та морозостійка.</li>
             </ul>
-            <button class="button button-small">Замовити</button>
+            <button class="button">Замовити</button>
           </div>
           <div class="header_right flex">
             <img src="images/Thuja.png" class="image fon_smaragd" alt="" />
@@ -157,6 +157,121 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="catalog_two container landing-section">
+      <div class="container">
+        <div class="catalog_text">
+          <h2>Каталог садженців туї</h2>
+        </div>
+        <div class="catalog_cards">
+          <div class="products__item">
+            <div class="products__image">
+              <img src="images/smaragd.png" alt="" />
+            </div>
+            <div class="products__name">
+              <p>
+                Туя Smaragd – ідеальна рослина для живоплотів. Дерево
+                вічнозелене, повільно зростаюче і дуже гарне.
+              </p>
+            </div>
+            <button class="button-small">Замовити</button>
+          </div>
+          <div class="products__item">
+            <div class="products__image">
+              <img src="images/samshit.png" alt="" />
+            </div>
+            <div class="products__name">
+              <p>
+                Самшит - найкраща рослина для топіарі, та створення унікальних
+                форм за допомогою декоративної стрижки.
+              </p>
+            </div>
+
+            <button class="button-small">Замовити</button>
+          </div>
+
+          <div class="products__item">
+            <div class="products__image">
+              <img src="images/Thuja11.png" alt="" />
+            </div>
+            <div class="products__name">
+              <p>
+                Туя західна Даніка - це карликовий, дуже щільний, симетричної
+                шаровидної форми сорт, не потребує коректуючої стрижки.
+              </p>
+            </div>
+            <button class="button-small">Замовити</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews_title flex">
+          <h2>Відгуки наших клієнтів</h2>
+        </div>
+        <div class="reviews_items grid">
+          <div class="reviews_item grid">
+            <h2>Анастасія<img src="images/ico.svg" alt="" /></h2>
+
+            <p>
+              Дуже порядний та чуйний продавец! Туї дуже гарні та пишні. Всім
+              рекомендую
+            </p>
+          </div>
+          <div class="reviews_item grid">
+            <h2>Наталля<img src="images/ico.svg" alt="" /></h2>
+
+            <p>
+              Продавець надав детальну інформацію про рослини. Допоміг
+              консультацією щодо посадки та доляду.
+            </p>
+          </div>
+          <div class="reviews_item grid">
+            <h2>Юля<img src="images/ico.svg" alt="" /></h2>
+
+            <p>Туї якісні. Відповідають опису. Швидко відправили.</p>
+          </div>
+          <div class="reviews_item grid">
+            <h2>Сергій<img src="images/ico.svg" alt="" /></h2>
+
+            <p>Гарна консультація. Дуже дякую.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="foms">
+      <div class="container">
+        <div class="reviews_title flex">
+          <h2>Форма замовлення</h2>
+        </div>
+        <form id="callback" class="contact-form form-callback">
+          <input type="hidden" name="admin-data" />
+
+          <div class="contact-form-head">
+            <p>Дякую за замовлення!</p>
+          </div>
+
+          <label>
+            <span>Ваше имя:</span>
+            <input type="text" name="Имя" placeholder="Ваше имя..." />
+          </label>
+
+          <label>
+            <span>Ваш телефон:</span>
+            <input
+              type="text"
+              name="Телефон"
+              placeholder="Ваш телефон..."
+              required
+            />
+          </label>
+
+          <div class="text-center">
+            <button class="button button-small">Отправить</button>
+          </div>
+        </form>
       </div>
     </section>
   </body>
