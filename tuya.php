@@ -1,13 +1,14 @@
 <?php
 /*
 Template Name: landing-tuya
-Template Post Type:landing-tuya
- */
+Template Post Type: post, page
+*/
+?>
 
 
 <!DOCTYPE html>
   <head>
-    <meta charset="utf-8" />
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
@@ -21,16 +22,16 @@ Template Post Type:landing-tuya
 
     <link rel="icon" href="images/favicon.png" />
     <meta property="og:image" content="images/preview.jpg" />
+    
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/bootstrap/css/bootstrap-reboot.min.css" />	
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/bootstrap/css/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/fonts.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mains.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/media.css" />
 
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
+  <script src="<?php echo get_template_directory_uri(); ?>/libs/jquery/jquery-3.6.0.min.js" defer></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/commons.js" defer></script>
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media.css" />
-
-    <script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
-
-    <script src="js/common.js" defer></script>
   </head>
 
   <body>
@@ -48,6 +49,7 @@ Template Post Type:landing-tuya
             </a>
           </div>
           <div class="menu_items flex">
+
             <a href="" class="items">Переваги</a>
             <a href="" class="items">Про нас</a>
             <a href="" class="items">Каталог</a>
@@ -331,5 +333,6 @@ Template Post Type:landing-tuya
       </form>
   
     </div>
+ 
   </body>
 </html>
