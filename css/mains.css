@@ -23,6 +23,29 @@
 	--bs-gutter-x: 1.25rem;
 }
 
+.items,
+.items_menu {
+	text-decoration: none;
+	color: inherit;
+	transition: all .5s ease;
+}
+
+.items:hover {
+	color: var(--accent);
+	outline: 0 !important
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: all .5s ease;
+}
+
+a:hover {
+	color: #ECB124;
+	outline: 0 !important
+}
+
 /* FONTS LOAD SECTION */
 
 @font-face {
@@ -92,6 +115,7 @@
 a {
 	text-decoration: none;
 	color: inherit;
+	transition: background-color 0.3s ease;
 }
 
 /* GENERAL CSS SETTINGS */
@@ -215,14 +239,14 @@ ul.advantages li {
 
 }
 
-.smaragd {
+.header_left .smaragd {
 	font-size: 86px;
 	font-family: RobotoCondensedBold-st;
 	align-self: flex-start;
 	position: relative;
 }
 
-.smaragd::after {
+.header_left .smaragd::after {
 	content: "";
 	position: absolute;
 	top: 105px;
@@ -269,14 +293,12 @@ ul.advantages li {
 
 .item {
 	align-self: center;
-	justify-self: center;
+
 	text-align: left;
 }
 
 .item-img {
 	position: relative;
-	/*	padding: 0px 0px 80% 0px;
-	margin: 0px 0px 20px 0px;*/
 }
 
 .item-img img {
@@ -750,52 +772,6 @@ form label .selectize-dropdown .active {
 #callback h4 {
 	line-height: 28px;
 	margin-bottom: 18px
-}
-
-.mfp-forms .forms {
-	background-color: #243343;
-	-webkit-box-shadow: 0 0 18px rgba(0, 0, 0, .5), 0 0 0 5px #243343;
-	box-shadow: 0 0 18px rgba(0, 0, 0, .5), 0 0 0 5px #243343;
-	border: none;
-	border-radius: 1px
-}
-
-.mfp-forms.mfp-wrap.mfp-ready {
-	opacity: 1
-}
-
-.mfp-forms .mfp-close {
-	color: #fff
-}
-
-.mfp-forms.mfp-bg {
-	opacity: 0;
-	-webkit-transition: all .25s ease-out;
-	-o-transition: all .25s ease-out;
-	transition: all .25s ease-out
-}
-
-.mfp-forms.mfp-bg.mfp-ready {
-	opacity: .8
-}
-
-.mfp-forms.mfp-bg.mfp-removing {
-	opacity: 0
-}
-
-.mfp-forms.mfp-wrap .mfp-content {
-	opacity: 0;
-	-webkit-transition: all .25s ease-out;
-	-o-transition: all .25s ease-out;
-	transition: all .25s ease-out
-}
-
-.mfp-forms.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1
-}
-
-.mfp-forms.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0
 }
 
 .top {
